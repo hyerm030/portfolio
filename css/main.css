@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.wrapper {min-width: 320px; height: 100%; position: relative; display: flex; flex-direction: column; flex-shrink: 0;}
+.wrapper {min-width: 320px; height: 100%; position: relative; display: flex; flex-direction: column; flex-shrink: 0; font-family: 'NanumSquareNeo';}
 :root {
     --pink: #ffafaf;
     --green: #14aa76;
@@ -10,7 +10,7 @@
     --yellow: #eaff30;
 }
 /* header s */
-.header {position: fixed; top: 0; left: 0; width: 100%; height: 13.33vw; border-bottom: 1px solid #000; background: rgba(255,255,255,.13); backdrop-filter: blur(50px) brightness(1.08); z-index: 200;}
+.header {position: fixed; top: 0; left: 0; width: 100%; height: 13.33vw; border-bottom: 1px solid #000; background: rgba(255,255,255,.13); backdrop-filter: blur(50px) brightness(1.08); -webkit-backdrop-filter: blur(50px) brightness(1.08); z-index: 200;}
 .inner-header {height: 100%; padding: 2vw; display: flex; justify-content: space-between; align-items: center;}
 .logo {font-size: 50px; font-weight: 600; padding: 0 15px;}
 .menu {font-size: 40px;}
@@ -22,9 +22,9 @@
 
 .main-visual {min-height: 600px; background: linear-gradient(90deg, rgb(255, 232, 121) 0%, rgb(255, 189, 189) 20%, rgb(255, 189, 189) 80%, rgb(149, 187, 158) 100%);}
 
-.scroll-text {width: 100%; overflow: hidden; white-space: nowrap; background-color: #fff; font-size: clamp(15vw, 18vw, 20vw);}
+.scroll-text {width: 100%; overflow: hidden; white-space: nowrap; background-color: #fff; font-size: clamp(15vw, 18vw, 20vw); font-family: 'Modak', cursive;}
 .scroll-text>ul {display: flex; align-items: center;}
-.scroll-text>ul>li {font-weight: 700; letter-spacing: -8px; margin-right: 20px; animation: marqueeleft linear infinite 9000ms;}
+.scroll-text>ul>li {padding-top: 10px; font-weight: 300; letter-spacing: -1px; margin-right: 20px; animation: marqueeleft linear infinite 9000ms;}
 
 @keyframes marqueeleft{
     from {transform: translate3d(0, 0, 0)}
